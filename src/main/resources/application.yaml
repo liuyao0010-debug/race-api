@@ -7,11 +7,12 @@ spring:
     password: race
   jpa:
     hibernate:
-      ddl-auto: validate
+    # 从 validate 改为 update
+      ddl-auto: update
     show-sql: true
   web:
     error:
       include-message: always
 
   flyway:
-    enabled: true
+    enabled: true  # 从 true 改为 false

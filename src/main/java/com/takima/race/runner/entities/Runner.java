@@ -1,13 +1,14 @@
 package com.takima.race.runner.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
 import java.util.Objects;
 
 @Entity
+@Table(name = "runners")
 public class Runner {
 
     @Id
